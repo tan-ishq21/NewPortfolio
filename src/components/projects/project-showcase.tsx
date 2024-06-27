@@ -72,8 +72,8 @@ export default function ProjectShowcase(props: ProjectShowcaseProps) {
             </motion.div>
           </AnimatePresence>
         </div>
-        <h2 className="text-xl font-semibold text-accent sm:text-3xl">
-          My projects
+        <h2 className="text-xl font-bold text-accent sm:text-3xl">
+          My Projects
         </h2>
         <div className="hidden flex-col gap-6 py-14 sm:gap-8 sm:py-20 md:gap-10 lg:flex">
           {props.projects.map((proj, index) => (

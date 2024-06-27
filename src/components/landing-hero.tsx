@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 import FadeUp from "@/animation/fade-up";
+import Link from "next/link";
 
 export default function LandingHero() {
   const [scrollY, setScrollY] = useState(0);
@@ -32,7 +33,7 @@ export default function LandingHero() {
       }}
       transition={{ type: "spring", stiffness: 100 }}
       ref={ref}
-      className="pointer-events-none flex h-[calc(100vh-112px)] items-center px-6 sm:px-14 md:px-20"
+      className="flex h-[calc(100vh-112px)] items-center px-6 sm:px-14 md:px-20"
     >
       <div className="-mt-[112px] w-full">
         <div className="mx-auto max-w-7xl">
@@ -55,6 +56,16 @@ export default function LandingHero() {
           </AnimatePresence>
         </div>
       </div>
+      <div>
+      <Link 
+        href="https://drive.google.com/file/d/1t0uS8uIrKdJxLpGtFfl4--7lAQNeeV-w/view?usp=drive_link" 
+        target="_blank" 
+        className="px-6 py-4 my-4 bg-accent text-white cursor-pointer font-semibold rounded-lg shadow-md"
+      >
+        Resume
+      </Link>
+      </div>
+              
     </motion.section>
   );
 }
