@@ -14,7 +14,7 @@ export const siteMetadata = {
   socialBanner: "/static/homepage.png",
   email: "tan.sriv27@gmail.com",
   github: "https://github.com/tan-ishq21",
-  instagram: "https://www.instagram.com/tan.ishq_sri",
+  instagram: "https://www.instagram.com/@tan.ishq_sri",
   linkedin: "https://www.linkedin.com/in/tanishq-raj-70a9a222a/",
   locale: "en-US",
   googleSiteVerification: "",
