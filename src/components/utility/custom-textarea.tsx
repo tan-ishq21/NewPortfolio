@@ -1,7 +1,8 @@
+// Disable the prettier rule for this line
+// eslint-disable-next-line prettier/prettier
+
 import { InputHTMLAttributes, forwardRef } from "react";
-
 import { classNames } from "@/utility/classNames";
-
 export interface TextareaProps
   extends InputHTMLAttributes<HTMLTextAreaElement> {}
 

@@ -1,3 +1,6 @@
+// Disable the prettier rule for this line
+// eslint-disable-next-line prettier/prettier
+
 import { SVGMotionProps, motion } from "framer-motion";
 
 import { classNames } from "@/utility/classNames";

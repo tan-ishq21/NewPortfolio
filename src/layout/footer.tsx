@@ -1,3 +1,5 @@
+// Disable the prettier rule for this line
+// eslint-disable-next-line prettier/prettier
 
 import { GithubIcon, InstagramIcon, LinkedinIcon } from "@/components/icons";
 import { siteMetadata } from "@/data/siteMetaData.mjs";

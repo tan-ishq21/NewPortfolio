@@ -1,14 +1,14 @@
+// Disable the prettier rule for this line
+// eslint-disable-next-line prettier/prettier
+
 import {
   SiExpress,
-  SiSocketdotio,
   SiPrisma,
   SiNextdotjs,
-  SiFlask,
 } from "react-icons/si";
 import {
   FramerMotionIcon,
   ReactRouterDomIcon,
-  VitePwaIcon,
 } from "@/components/icons";
 import { type SkillsShowcaseProps } from "@/components/skills/skills-showcase";
 

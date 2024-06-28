@@ -43,7 +43,7 @@ export function rateLimiterApi(options?: options) {
           res.setHeader("X-RateLimit-Limit", limit);
           res.setHeader(
             "X-RateLimit-Remaining",
-            isRateLimited ? 0 : limit - currentUsage,
+            isRateLimited ? 0 : limit - currentUsage
           );
 
           if (isRateLimited) {
@@ -75,7 +75,7 @@ export const getUserId = (req: NextApiRequest, res: NextApiResponse) => {
     req.cookies[RATE_LIMITER_EXPIRY_DATE_COOKIE_NAME]
   ) {
     const expiryDate = new Date(
-      req.cookies[RATE_LIMITER_EXPIRY_DATE_COOKIE_NAME],
+      req.cookies[RATE_LIMITER_EXPIRY_DATE_COOKIE_NAME]
     );
     // If user id have expired set new expiry date cookie
     if (expiryDate <= new Date()) {
@@ -98,7 +98,7 @@ const setUserTokenCookie = (res: NextApiResponse) => {
     "Set-Cookie",
     `${RATE_LIMITER_USER_ID_COOKIE_NAME}=${userUuidToken}; Max-Age=${
       60 * 60 * 24
-    }; SameSite=Strict`,
+    }; SameSite=Strict`
   );
   return userUuidToken;
 };
@@ -110,6 +110,6 @@ const setTokenExpiryCookie = (res: NextApiResponse) => {
     "Set-Cookie",
     `${RATE_LIMITER_EXPIRY_DATE_COOKIE_NAME}=${newExpirationDate.toUTCString()}; Max-Age=${
       60 * 60 * 24
-    }; SameSite=Strict`,
+    }; SameSite=Strict`
   );
 };

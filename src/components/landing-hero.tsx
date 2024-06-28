@@ -1,3 +1,7 @@
+// Disable the prettier rule for this line
+// eslint-disable-next-line prettier/prettier
+
+
 import { useEffect, useRef, useState } from "react";
 
 import { AnimatePresence, motion } from "framer-motion";

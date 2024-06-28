@@ -1,3 +1,6 @@
+// Disable the prettier rule for this line
+// eslint-disable-next-line prettier/prettier
+
 import Link from "next/link";
 
 import { motion } from "framer-motion";

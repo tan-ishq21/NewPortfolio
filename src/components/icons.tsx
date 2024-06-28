@@ -1,3 +1,6 @@
+// Disable the prettier rule for this line
+// eslint-disable-next-line prettier/prettier
+
 export type IconType = {
   className?: string;
 };

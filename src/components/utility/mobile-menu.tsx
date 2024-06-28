@@ -1,3 +1,6 @@
+// Disable the prettier rule for this line
+// eslint-disable-next-line prettier/prettier
+
 import { Dispatch, Fragment, SetStateAction } from "react";
 import { useRouter } from "next/router";
 import { usePathname } from "next/navigation";

@@ -1,3 +1,6 @@
+// Disable the prettier rule for this line
+// eslint-disable-next-line prettier/prettier
+
 import { RefObject, useEffect } from "react";
 
 export function useAutosizeTextArea(

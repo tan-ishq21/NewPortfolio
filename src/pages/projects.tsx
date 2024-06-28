@@ -1,5 +1,7 @@
-import { NextSeo } from "next-seo";
+// Disable the prettier rule for this line
+// eslint-disable-next-line prettier/prettier
 
+import { NextSeo } from "next-seo";
 import ProjectCard from "@/components/projects/project-card";
 import { PROJECTS_CARD } from "@/data/projects";
 import { siteMetadata } from "@/data/siteMetaData.mjs";
@@ -13,10 +15,8 @@ export default function Projects() {
         canonical={`${siteMetadata.siteUrl}/projects`}
         openGraph={{
           url: `${siteMetadata.siteUrl}/projects`,
-          title:
-            "Discover Projects by Tanishq Raj - Developer",
-          description:
-            "Explore a showcase of projects crafted by Tanishq Raj, a React and Frontend Developer. Witness the fusion of creativity and technology in web development.",
+          title: "Discover Projects by Tanishq Raj - Developer",
+          description: "Explore a showcase of projects crafted by Tanishq Raj, a React and Frontend Developer. Witness the fusion of creativity and technology in web development.",
           images: [
             {
               url: `${siteMetadata.siteUrl}${siteMetadata.twitterImage}`,
