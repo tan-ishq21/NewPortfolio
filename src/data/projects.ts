@@ -85,5 +85,17 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     sourceCodeHref: "https://github.com/tan-ishq21/NewPortfolio",
     liveWebsiteHref: siteMetadata.siteUrl,
   },
+  {
+    name: "Symptom Checker Chatbot",
+    favicon: "/images/projects/logos/chatbot.ico",
+    imageUrl: [
+      "/images/projects/Chatbot1.webp",
+      "/images/projects/Chatbot2.webp",
+    ],
+    description:
+      "Symptom Checker AI Chatbot made using Nextjs, which gives you the information about any illness symptoms.",
+    sourceCodeHref: "https://github.com/tan-ishq21/symptoms-checker-chatbot",
+    liveWebsiteHref: "https://symptom-checker-chatbot.vercel.app/",
+  },
   
 ];
